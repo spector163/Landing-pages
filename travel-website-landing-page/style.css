@@ -1,6 +1,31 @@
 /* use css reset and build a consistent design system */
-
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header,
+footer,
+main {
+  position: absolute;
+  width: 100%;
   text-align: center;
-  text-decoration: underline;
+  padding-block: 1rem;
+  background-color: hsl(0, 0%, 89%);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+header {
+  top: 0;
+}
+footer {
+  bottom: 0;
+}
+main {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(160, 60%, 69%);
 }
